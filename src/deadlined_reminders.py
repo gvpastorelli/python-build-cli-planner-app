@@ -21,6 +21,9 @@ class DateReminder(DeadlinedReminder):
         self.date = parse(date, dayfirst=True)
         self.text = text
 
+    def is_due(self):
+        pass
+
 # Create a class named DeadlinedMetaReminder that inherits from Iterable and 
 # takes ABCMeta as its metaclass parameter. Add method is_due(), set the body to 
 # pass and mark it with the @abstractmethod decorator
